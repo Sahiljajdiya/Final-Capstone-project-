@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: smart-college-it-finder-backend
+    env: python
+    plan: free
+    rootDir: ai-system-web/backend
+    buildCommand: pip install -r requirements.txt && python -m pytest . || true
+    startCommand: uvicorn app:app --host 0.0.0.0 --port 8000
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11
+      - key: PORT
+        value: 8000
+      - key: ENVIRONMENT
+        value: production
+    healthCheckPath: /api/health
+    preDeployCommand: |
+      echo "Verifying Python environment..."
+      python --version
+      pip --version
