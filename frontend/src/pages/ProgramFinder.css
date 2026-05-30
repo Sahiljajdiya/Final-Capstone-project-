@@ -1,0 +1,70 @@
+/* ProgramFinder page styles */
+
+.program-page .filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.program-page .filters select,
+.program-page .filters input {
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  font-size: 1rem;
+}
+
+.program-page .filters input[type="text"] {
+  flex: 1;
+  min-width: 200px;
+}
+
+.program-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.program-card {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.program-card h3 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.program-card .college {
+  color: var(--secondary);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.program-card .program-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.program-card p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.program-card .btn {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.no-results {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  padding: 2rem;
+}
