@@ -3,12 +3,15 @@ services:
     name: smart-college-it-finder-backend
     env: python
     plan: free
-    rootDir: ai-system-web/backend
-    buildCommand: pip install -r requirements.txt && python -m pytest . || true
-    startCommand: uvicorn app:app --host 0.0.0.0 --port 8000
+    buildCommand: |
+      cd frontend && npm install && npm run build && cd .. &&
+      pip install -r requirements.txt
+    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: PYTHON_VERSION
         value: 3.11
+      - key: NODE_VERSION
+        value: 18.19.0
       - key: PORT
         value: 8000
       - key: ENVIRONMENT
