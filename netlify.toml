@@ -13,7 +13,7 @@
 # Environment variables
 [build.environment]
   NODE_ENV = "production"
-  VITE_API_URL = "https://api.smart-college-it-finder.dev"
+  VITE_API_URL = "https://final-capstone-backend-chpa.onrender.com"
 
 [context.production]
   command = "npm run build"
