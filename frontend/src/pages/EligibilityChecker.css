@@ -1,0 +1,56 @@
+/* EligibilityChecker page styles */
+
+.eligibility-page .form-box {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.eligibility-page .form-box h2 {
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.eligibility-page .result-section {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-left: 4px solid var(--primary);
+}
+
+.eligibility-page .result-section .score {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.eligibility-page .result-section .verdict {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.eligibility-page .result-section .verdict.eligible {
+  color: #16a34a;
+}
+
+.eligibility-page .result-section .verdict.not-eligible {
+  color: #dc2626;
+}
+
+.eligibility-page .result-section ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
