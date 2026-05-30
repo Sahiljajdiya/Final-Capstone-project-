@@ -12,7 +12,6 @@
 
 # Environment variables
 [build.environment]
-  NODE_ENV = "production"
   VITE_API_URL = "https://final-capstone-backend-chpa.onrender.com"
 
 [context.production]
