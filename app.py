@@ -26,7 +26,7 @@ except ImportError:
     _ml_pipeline = None  # type: ignore[assignment]
     ML_AVAILABLE = False
 
-PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 DATA_PATH = os.path.join(
     PROJECT_ROOT, "ontario_college_IT_programs_ONLY_DEDUP_COLLEGE_PROGRAM.csv"
 )
