@@ -1,0 +1,47 @@
+/* CostCalculator page styles */
+
+.cost-page .calc-form {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.cost-page .result-section {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-left: 4px solid var(--primary);
+}
+
+.cost-page .result-section .total {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.cost-page .breakdown {
+  margin-top: 1.5rem;
+}
+
+.cost-page .breakdown p {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-muted);
+}
+
+.cost-page .breakdown p:last-child {
+  border-bottom: none;
+  font-weight: 700;
+  color: var(--secondary);
+  margin-top: 0.5rem;
+}
